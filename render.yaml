@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pentest-capture
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    envVars:
+      - key: VIEW_TOKEN
+        sync: false
+        value: tv-capture-collector
